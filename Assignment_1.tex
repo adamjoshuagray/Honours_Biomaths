@@ -1,0 +1,72 @@
+
+\documentclass{unswmaths}
+\usepackage{mathtools}
+\usepackage{unswshortcuts}
+\usepackage{fullpage}
+\usepackage{float}
+
+
+\author{Adam J. Gray}
+\studentno{3329798}
+\subject{Biomathematics}
+\title{Assignment 1}
+
+
+\begin{document}
+
+\unswtitle
+
+\section*{Question 5}
+\subsection*{a}
+	$ F $ is a linear combination of $ N $ and $ \frac{dN}{dt} $. This means that the larger the population is the more demand for the food there is. It also means that the faster the populations is growing, the more demand for food there is which would make sense because cell division could require \emph{more resources}.
+\subsection*{b}
+	\begin{align*}
+		\frac{dN}{dt} &= rN \frac{T - \left(c_1N + c_2\frac{dN}{dt}\right)}{T} \\
+		\frac{dN}{dt} \left( 1 + \frac{rc_2N}{T}\right) &= rN\left(1 - \frac{c_1N}{T} \right) \\
+		\frac{dN}{dt} &= rN \left( \frac{\frac{T}{c_1} - N}{\frac{T}{c_1} + \frac{rc_2N}{c_1}} \right) \\
+			&= rN \left( \frac{K - N}{K + aN}\right)
+	\end{align*}
+	where $ K = \frac{T}{c_1} $ and $ a = \frac{rc_2}{c_1} $.
+\subsection*{c}
+	Let $ f(N) = rN\left( \frac{K-N}{K+aN} \right) $ thus $ f(N) = 0 \Longrightarrow N^* = 0, N^* = K $.
+	\begin{align*}
+		f'(N) = r \left( \frac{K-N}{K+aN} \right) + rN \left( \frac{-(K+aN) - (K-N)a}{(K+aN)^2}\right)
+	\end{align*}
+	and
+	\begin{align*}
+		f'(0) &= r > 0 \\
+		f'(K) &= \frac{-r}{a+1} < 0
+	\end{align*}
+	thus the steady states are $ N = 0 $ and $ N = k $ and they are unstable and stable respectively.
+\section*{Question 7}
+\subsection*{a}
+	\begin{align*}
+		\frac{dx}{dt} = 0 &\Longrightarrow 0.2x\left( 1 - \frac{x}{3} \right) = 0 \\
+			& \Longrightarrow x^* = 0, 3
+	\end{align*}
+	So the steady states of the system are $ x^* = 0 $ and $ x^* = 3 $.
+\subsection*{b}
+	\begin{align*}
+		\frac{dx}{dt} &= 0.2x\left( 1 - \frac{x}{3} \right) \\
+		\int \frac{dx}{x(3-x)} &= \frac{1}{15} \int dt \\
+		\int \frac{dx}{3x} + \int \frac{dx}{3(3-x)} &= \frac{1}{15} \int dt \\
+		\frac{1}{3} \ln(x) - \frac{1}{3} \ln(3-x) &= \frac{t}{15} + C \\
+		\ln \left( \frac{x}{3-x} \right) &= \frac{t}{5} + B \\
+		\frac{x}{3-x} &= \exp(\frac{t}{5} + B) \\
+		x &= \frac{3\exp(\frac{t}{5} + B)}{1 + \exp(\frac{t}{5} + B)}
+	\end{align*}
+	As $ x(0) = x_0 $
+	\begin{align*}
+		B &= \ln \left( \frac{x_0}{3-x_0} \right)
+	\end{align*}
+	and so
+	\begin{align*}
+		x = \frac{3 x_0 \exp(\frac{t}{5})}{3 + x_0 (\exp(\frac{t}{5}) - 1)}.
+	\end{align*}
+\subsection*{c}
+	The steady states of the population are
+	$ x^* = 0 $ and $ x^* = 3 - 15E $. Note that the second steady state is a function of $ E $ and for a sustainable yield we would require $ E < \frac{1}{5} $ so that the steady state is positive.
+	
+\subsection*{d}
+	As per the last section the maximum sustainable yeild is $ E = \frac{1}{5} $.
+\end{document}
