@@ -87,7 +87,6 @@ Then assuming that there are no other population limiting factors, the governing
 where $ F(t) $ is the population of fish at time $ t $ (months) and $ r $ is the population growth rate in fish per month.
 
 \section*{Question 8}
-
 \subsection*{a}
     \begin{align*}
         \underbrace{\frac{dx}{dt}}_{animals\cdot km^{-2} \cdot day^{-1}} = \underbrace{a}_{day^{-1}}\underbrace{x}_{animals \cdot km^{-2}} - \underbrace{b}_{animals^{-1} \cdot km^{2} \cdot day^{-1}}\underbrace{xy}_{animals^{2} \cdot km^{-4}} \\
@@ -149,4 +148,39 @@ where $ F(t) $ is the population of fish at time $ t $ (months) and $ r $ is the
     Only one stationary point so this \emph{must} be the maximum. 
     
     Maximum at $ (1,1) $ with value $ 1 + \alpha $ (by simple subsitituion).
+\section*{Question 9}
+\subsection*{a}
+The system of differential equations is given by
+\begin{align*}
+    \left( \begin{array}{c} \frac{dx}{dt} \\ \frac{dy}{dt} \end{array}\right) &= \left[ \begin{array}{cc} -k_1 & 0 \\ k_1 & -k_2 \end{array} \right] \left( \begin{array}{c} x(t) \\ y(t) \end{array}\right)
+\end{align*}
+along with the inital conditions
+\begin{align*}
+    x(0) &= A \\
+    y(0) &= 0 
+\end{align*}
+\subsection*{b}
+Let
+\begin{align*}
+   B := \left[
+        \begin{array}{cc}
+            -k_1 & 0 \\
+            k_1 & - k_2
+        \end{array}
+        \right].
+\end{align*}
+It is clear to see that this has eigenvalues $ \lambda_1 = -k_1 $ and $ \lambda_2 = -k_2 $. Simple computations show that the corresponding eigenvectors are
+\begin{align*}
+    \mathbf{v}_1 &= \left( \begin{array}{c} 1/k_1 \\ 1/(k_2-k_1) \end{array}\right) \\
+    \mathbf{v}_2 &= \left( \begin{array}{c} 0 \\ 1 \end{array}\right)  
+\end{align*}
+and so the general solution to the system of differential equations is
+\begin{align*}
+    \left( \begin{array}{c} x(t) \\ y(t) \end{array} \right) = \alpha \left( \begin{array}{c} 1/k_1 \\ 1/(k_2 - k_1) \end{array}\right) e^{-k_1 t} +  \beta \left( \begin{array}{c} 0 \\ 1 \end{array}\right) e^{-k_2 t}.
+\end{align*}
+By applying the initial conditions we get that system of equations
+\begin{align}
+    \alpha \left( \begin{array}{c} 1 / k_1 \\ 1 / (k_2 - k_1) \end{array} \right) + \beta \left( \begin{array}{c} 0 \\ 1 \end{array} \right) = \left( \begin{array}{c} A \\ 0 \end{array}\right)
+\end{align}
+which gives us that $ \alpha = k_1 A $ and $ \beta = -k_1 A / (k_2 - k_1 ) $
 \end{document}
