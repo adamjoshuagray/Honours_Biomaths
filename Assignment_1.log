@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.21)  31 AUG 2014 13:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.21)  31 AUG 2014 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,148 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box63
 \@float@everytoks=\toks36
 \@floatcapt=\box64
-) (./Assignment_1.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks37
+\t@pgfplots@tokb=\toks38
+\t@pgfplots@tokc=\toks39
+\pgfplots@tmpa=\dimen174
+\c@pgfplots@coordindex=\count141
+\c@pgfplots@scanlineindex=\count142
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+Package pgfplots: loading complementary code for your PGF version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_misc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks40
+\pgfkeys@temptoks=\toks41
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks42
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count143
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
+\pgf@plot@mark@count=\count144
+\pgfplotmarksize=\dimen175
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryfpu.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count145
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count146
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count147
+\t@pgfplotstable@a=\toks43
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count148
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.code.tex
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen176
+\pgfdecoratedremainingdistance=\dimen177
+\pgfdecoratedinputsegmentcompleteddistance=\dimen178
+\pgfdecoratedinputsegmentremainingdistance=\dimen179
+\pgf@decorate@distancetomove=\dimen180
+\pgf@decorate@repeatstate=\count149
+\pgfdecorationsegmentamplitude=\dimen181
+\pgfdecorationsegmentlength=\dimen182
+)
+\tikz@lib@dec@box=\box68
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathmorphing.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athmorphing.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathreplacing.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athreplacing.code.tex))
+\pgfplots@numplots=\count150
+\pgfplots@xmin@reg=\dimen183
+\pgfplots@xmax@reg=\dimen184
+\pgfplots@ymin@reg=\dimen185
+\pgfplots@ymax@reg=\dimen186
+\pgfplots@zmin@reg=\dimen187
+\pgfplots@zmax@reg=\dimen188
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotm
+arks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
+)))
+(./Assignment_1.aux)
 \openout1 = `Assignment_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -589,20 +730,27 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count141
-\scratchdimen=\dimen174
-\scratchbox=\box65
-\nofMPsegments=\count142
-\nofMParguments=\count143
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count144
-\MPscratchDim=\dimen175
-\MPnumerator=\count145
-\makeMPintoPDFobject=\count146
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count151
+\scratchdimen=\dimen189
+\scratchbox=\box69
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen190
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks45
 ) ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
+our preamble.
+ on input line 15.
+
 <artwork/unswlogo.jpg, id=4, 254.96857pt x 93.37283pt>
 File: artwork/unswlogo.jpg Graphic file (type jpg)
 
@@ -632,13 +780,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1] [2] [3] [4]
 [5] (./Assignment_1.aux) ) 
 Here is how much of TeX's memory you used:
- 11919 strings out of 493304
- 214549 string characters out of 6139871
- 274179 words of memory out of 5000000
- 15086 multiletter control sequences out of 15000+600000
+ 19793 strings out of 493304
+ 464761 string characters out of 6139871
+ 628252 words of memory out of 5000000
+ 22812 multiletter control sequences out of 15000+600000
  9678 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 63i,16n,57p,424b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,20n,74p,708b,1954s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmc
@@ -655,7 +803,7 @@ fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on Assignment_1.pdf (6 pages, 414301 bytes).
+Output written on Assignment_1.pdf (6 pages, 417158 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

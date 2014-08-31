@@ -4,7 +4,7 @@
 \usepackage{unswshortcuts}
 \usepackage{fullpage}
 \usepackage{float}
-
+\usepackage{pgfplots}
 
 \author{Adam J. Gray}
 \studentno{3329798}
@@ -150,6 +150,19 @@ where $ F(t) $ is the population of fish at time $ t $ (months) and $ r $ is the
     Maximum at $ (1,1) $ with value $ 1 + \alpha $ (by simple subsitituion).
 \section*{Question 9}
 \subsection*{a}
+\begin{figure}[H]
+\begin{tikzpicture}
+    \draw (0,0) -- (0,2) -- (2,2)  -- (2,0) -- (0,0);
+    \draw[->] (2,1) -- (4,1);
+    \draw (4,0) -- (4,2) -- (6,2) -- (6,0) -- (4,0);
+    \draw[->] (6,1) -- (8,1);
+    \draw (1,1) node {GI: $ x(t) $};
+    \draw (5,1) node {Blood: $ y(t) $};
+    \draw (3,1.5) node {$k_1$};
+    \draw (7,1.5) node {$k_2$};
+\end{tikzpicture}
+\end{figure}
+
 The system of differential equations is given by
 \begin{align*}
     \left( \begin{array}{c} \frac{dx}{dt} \\ \frac{dy}{dt} \end{array}\right) &= \left[ \begin{array}{cc} -k_1 & 0 \\ k_1 & -k_2 \end{array} \right] \left( \begin{array}{c} x(t) \\ y(t) \end{array}\right)
@@ -182,5 +195,20 @@ By applying the initial conditions we get that system of equations
 \begin{align}
     \alpha \left( \begin{array}{c} 1 / k_1 \\ 1 / (k_2 - k_1) \end{array} \right) + \beta \left( \begin{array}{c} 0 \\ 1 \end{array} \right) = \left( \begin{array}{c} A \\ 0 \end{array}\right)
 \end{align}
-which gives us that $ \alpha = k_1 A $ and $ \beta = -k_1 A / (k_2 - k_1 ) $
+which gives us that $ \alpha = k_1 A $ and $ \beta = -k_1 A / (k_2 - k_1 ) $.
+So the solutions look like
+\begin{figure}[H]
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel = $t$
+    ]
+    \addplot[domain=0:6] {exp(-1.386*x};
+    \addplot[domain=0:6,color=red] {-1.1111 * exp(-1.386 * x) + 1.1111 * exp(-0.1386 * x)};
+    \addlegendentry{$x(t)$}
+    \addlegendentry{$y(t)$}
+    \end{axis}
+\end{tikzpicture}
+
+Decongestant levels quickly drop in the GI tract but they build up quickly in the blood and are slow to clear from the blood.
+\end{figure}
 \end{document}
