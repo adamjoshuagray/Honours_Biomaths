@@ -71,6 +71,7 @@
 	As per the last section the maximum sustainable yeild is $ E = \frac{1}{5} $.
 
 \section*{Question 3}
+\subsection*{a}
 Let $ H : [0, \infty) \lra \mathbb{R} $ be defined as
 \begin{align*}
     H(t) = 
@@ -86,6 +87,63 @@ Then assuming that there are no other population limiting factors, the governing
 \end{align*}
 where $ F(t) $ is the population of fish at time $ t $ (months) and $ r $ is the population growth rate in fish per month.
 
+\section*{Question 4}
+\subsection*{a}
+The coefficient $ 2a $ steers the system in the sense that for $ a = 0 $ the system models a commensalistic symbiotic relationship. That is one party, $ x $, benefits without harm to the other party, $ y $. 
+As $ a $ increases this scales into a mutualistic relationship where both parties benefit. For values of $ a > 1 $ we would actually have $ y $ benefiting \emph{more} from the relationship, than $ y $ does. 
+\subsection*{b}
+The nontrivial steady state is at $ x = 6 / (1 - 4a) $, $ y = -1 - 3 / (4a - 1) $. Now if we want the non-trivial steady state to be in the population quadrant we need $ x > 0 $ and $ y > 0 $.
+    For $ x > 0 $ we need $ a < 1 / 4 $. For $ y > 0 $ we need  $ a > -1/2 $.  To prevent explosive growth we would need $ a < 1/4 $.
+
+
+\section*{Question 5}
+\subsection*{a}
+Clearly there is a steady state at $ x=0=y $.  Also there is a steady state at $ y = 0, x = K $. 
+
+There is also a steady state at $ x = c / d $ and $ y = a / b - ac / bdK $. 
+This is the non-trivial steady state.
+Note that
+\begin{align*}
+    J &= \left[ \begin{array}{cc} a - 2a x / K - by & -bx \\ dy & -c + dx \end{array}\right] \\
+    J \big|_{x = c/d, y = a(1/b - c/bdK} &= \left[ \begin{array}{cc} -ac / dK & -bc / d \\ ad / b - ac /bK & 0 \end{array} \right].
+\end{align*}
+Now 
+\begin{align*}
+    \operatorname{Tr}\left( J \big|_{x = c/d, y = a(1/b - c/bdK} \right) &= \frac{-ac}{dK}  \\
+    \operatorname{det}\left(  J \big|_{x = c/d, y = a(1/b - c/bdK} \right) &= ac\left( 1 - c / dK \right).
+\end{align*}
+Assuming that all constants are positive this means that the non-trivial steady state is stable if $ c/dK < 1 $. 
+
+\section*{Question 6}
+\subsection*{a}
+$ r_MS_MI_F $ is the term which describes the rate at which males leave the susceptible state because they have become infected due to a male - female interaction.
+
+$ a_MI_M $ is the tern which describes how quickly males recover from the infected state and become susceptible again. Note that in this model there is no period of confered immunity and infected individuals simply become susceptible again.
+
+\subsection*{b}
+Clearly adding equations 1 and 3 and 2 and 4 yeilds 0 in each case. 
+
+As we can write $ S_F = N_F - I_F $ and $ S_M = N_M - I_M $ we can substitute these into equations 3 and 4 to get
+\begin{align*}
+    \frac{dI_M}{dt} &= r_MI_F(N_M-I_M)-a_MI_M \\
+    \frac{dI_F}{dt} &= r_FI_M(N_F - I_F) - a_FI_F.
+\end{align*}
+Note that this completely determines the system because $ \frac{dS_M}{dt} = -\frac{dI_M}{dt} $ and  $ \frac{dS_F}{dt} = -\frac{dI_F}{dt} $.
+\subsection*{c}
+The threshold population must exist at an equilibrium. Solving for the equilibriums we get that
+\begin{align*}
+    N_F &= I_F - \frac{a_FI_F}{r_FI_M} \\
+    N_M &= I_M - \frac{a_MI_M}{r_MI_F}
+\end{align*}
+and taking the product of these we get that
+\begin{align*}
+    N_MN_F &= \left( \frac{I_F + a_FI_F}{r_FI_M} \right) \left( I_M + \frac{a_MI_M}{r_MI_F} \right) \\
+        &= I_FI_M + \frac{a_Ma_F}{r_Mr_F} + \frac{a_MI_M}{r_M} + \frac{a_fI_F}{r_F} \\
+        &\geq  \frac{a_Ma_F}{r_Mr_F} 
+\end{align*}
+because all the other terms must be positive if we are at (or above) the threshold population.
+\begin{align*}
+\end{align*}
 \section*{Question 8}
 \subsection*{a}
     \begin{align*}
