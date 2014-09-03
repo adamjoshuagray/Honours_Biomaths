@@ -1,0 +1,9 @@
+*.save
+*~
+*.aux
+*.log
+*.out
+*.blg
+*.bak
+.*.swp
+.*.swo
