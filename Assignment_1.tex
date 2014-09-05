@@ -5,7 +5,7 @@
 \usepackage{fullpage}
 \usepackage{float}
 \usepackage{pgfplots}
-\newcommand{\N}{\frac{\alpha(\alpha + b + \nu)}{\beta \left(\alpha - \left[ 1 + \frac{\nu}{b + \gamma}\right] \right)}}
+\newcommand{\N}{\frac{\alpha(\alpha + b + \nu)}{\beta \left(\alpha - r\left[ 1 + \frac{\nu}{b + \gamma}\right] \right)}}
 \newcommand{\X}{\frac{\alpha + b + \nu}{\beta}}
 \newcommand{\Y}{\frac{r}{\alpha}\N}
 \newcommand{\Z}{\frac{r}{\alpha}\left( \frac{\nu}{b + \gamma} \right)\N}
@@ -184,16 +184,45 @@ because all the other terms must be positive if we are at (or above) the thresho
 \subsection*{a}
 \begin{align*}
     \frac{dX}{dt} &= \underbrace{a(X+Y+Z)}_{\text{natural birth rate}} + \underbrace{\gamma Z}_{\text{resusceptible rate}} - \underbrace{\beta XY}_{\text{infection rate}} - \underbrace{bX}_{\text{natural death rate}} \\
-    \frac{dY}{dt} &= \underbrace{\beta XY}_{\text{infection rate}} - \underbrace{(\alpha + b)Y}_{\text{death rate}} - \underbrace{\nu Z}_{\text{recovery rate}} \\
+    \frac{dY}{dt} &= \underbrace{\beta XY}_{\text{infection rate}} - \underbrace{(\alpha + b)Y}_{\text{death rate}} - \underbrace{\nu Y}_{\text{recovery rate}} \\
     \frac{dZ}{dt} &= \underbrace{\nu Y}_{\text{recovery rate}} - \underbrace{bZ}_{\text{natural death rate}} - \underbrace{\gamma Z}_{\text{resusceptible rate}}
 \end{align*}
 \subsection*{b}
     Subbing the equations in the question we get that
     \begin{align*}
-        X(a-b) + Z(\gamma + a) + aY \beta XY &= 
-    \end{align*}
+        & X(a-b) + Z(\gamma + a) + aY - \beta XY\\ 
+&= \X(a+b) + \Z(\gamma + a) + a\Y \\
+& \ \ \ - \beta\X\Y \\
+&= r\X + \frac{r\nu(\alpha + b + \nu)}{(b+\gamma)\beta\alpha - \beta r(b +\gamma + \nu)} +
+\frac{ar(\alpha + b + \nu)(b + \gamma)}{\beta\alpha (b + \gamma) - \beta r ( b + \gamma) + \beta r \nu} \\
+& \ \ \ - \frac{(\alpha + b + \nu)^2(b+\gamma)}{\beta\alpha(b + \gamma) + \beta r(b + \gamma) + \beta r \nu} \\
+&= \frac{r}{\beta}\left[(\alpha + b + \nu)- (\alpha + b + \nu)\right] \\
+&= 0
+\end{align*}
+\begin{align*}
+    &\beta X Y - (\alpha + b) Y - \nu Y \\
+    &= \beta \X\Y - (\alpha + b)\Y - \nu \Y \\
+    &= \frac{r(\alpha + b + \nu)^2(b + \gamma)}{\alpha\beta(b + \gamma) - \beta r (b + \gamma) - \beta r \nu} 
+- \frac{r(\alpha + b)(\alpha + b + \nu)(b + \gamma)}{\beta \alpha(b + \gamma)- \beta r (b + \gamma) - \beta r \nu } 
+- \frac{\nu(b + \gamma) r(\alpha + b + \nu)}{\beta \alpha(b + \gamma) -  \beta r (b + \gamma) - \beta r \nu } \\
+    &= \frac{r(\alpha+b + \nu)}{\alpha \beta - \beta r (b + \gamma) - \beta r \nu} \left[ (\alpha + b + \nu)(b + \gamma) - (\alpha + b)(b+\gamma) - \nu(b + \gamma)\right] \\
+    &= 0
+\end{align*}
+\begin{align*}
+    & \nu Y - b Z - \gamma Z \\
+    &= \nu \Y - b \Z - \gamma \Z \\
+    &= \frac{r\nu(\alpha + b + \nu)}{\beta\left(\alpha - r\left[ 1 + \frac{\nu}{b + \gamma} \right] \right)} \left( 1 - \frac{b + \gamma}{b + \gamma}\right) \\
+    &= 0
+\end{align*}
+Do the values given in the question are infact a steady state for the system.
 \subsection*{c}
-This is an obvious threshold because we would want the population to be positive, otherwise this doesn't make any sense!
+Note that $ N_2 = X_2 + Y_2 + Z_2 $ and so we can view $ N_2 $ as the equilibrium population. Therefor if
+\begin{align*}
+    \alpha < r\left( 1 + \frac{\nu}{b + \gamma}\right)
+\end{align*}
+then this population is negative which does not make sense. If equality hold then the population is infinite, which is more like saying there is no equilibrium population.
+
+In that context Anderson and May's remarks make sense in that the disease can regulate the population size. I think that this is a really interesting result because it means that a population's size can be \emph{capped} without appealing to logistic growth arguments, but rather just to the existence of a pathogen with a sufficiently high death rate.
 \section*{Question 8}
 \subsection*{a}
     \begin{align*}
